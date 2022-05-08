@@ -6,7 +6,8 @@ import routes from './routes';
 const PORT = config.get<number>('port');
 
 const app = express();
-
+//middleware
+app.use(express.json());
 const start = async () => {
   try {
     //connection to DB

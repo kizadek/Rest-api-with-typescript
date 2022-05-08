@@ -12,11 +12,6 @@ export interface UserDocument extends Document {
   comparePassword(candidatePassword: string): Promise<boolean>;
 }
 
-export interface HookNextFunction {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (error?: Error): any;
-}
-
 const userSchema = new Schema(
   {
     email: {
@@ -33,16 +28,13 @@ const userSchema = new Schema(
 );
 
 //hashing user password
-userSchema.pre('save', async function (next: HookNextFunction) {
+userSchema.pre('save', async function (next) {
   let user = this as UserDocument;
-
-  if (user.isModified('password')) {
+  if (!user.isModified('password')) {
     return next();
   }
-
   const salt = await bcript.genSalt(config.get<number>('saltWorkFactor'));
   const hash = await bcript.hashSync(user.password, salt);
-
   user.password = hash;
   return next();
 });
@@ -52,7 +44,6 @@ userSchema.methods.comparePassword = async function (
   candidatePassword: string
 ): Promise<boolean> {
   const user = this as UserDocument;
-
   return bcript.compare(candidatePassword, user.password).catch((e) => false);
 };
 
