@@ -1,0 +1,13 @@
+export default {
+  port: 1337,
+
+  dbUri:
+    'mongodb+srv://Mupela:17211055013a@pacticdb.aqejg.mongodb.net/rest-api-tutorial?retryWrites=true&w=majority',
+  saltWorkFactor: 10,
+  accessTokenTtl: '15m',
+  refreshTokenTtl: '1y',
+  accessTokenPrivateKey: `a5gyr0DJFb0JJ9sLR5bPIDQ1wzexCJUYOLHs76OHDJx+4g2UjdcDmuAEKihuwRPJ0+mD+dnRCruYcQtyE4zUJH+eysCSn+vKUcLKXyWhiat83SAgMA0zFpMFdJ+oSmfy6TSsDKAWQ9gDCrBk3K2yf8xk+pYsLAofXFwohSRVXUKPyWkqunaPwHKsahjVMxlrJKtZEaVx/nwZVZq6xg3pDRgZn6IqyAWMPb2nTTsTWvxuE5v3NlZGfoZETvkbRcB5FbEpbgcobSXJ8bxsL7MALwRAtnxmJisWeFMihMHvdhDP7yroTnWlB0N9y+2wZyYeXD1zqG0HKzNJwoGzzFYXfg==`,
+  accessTokenPublicKey: `LsQ1b+Z1p83R4PmTCcMjXxUhjNbUQUoVrIH6p/ULjKg9c6+lUktBDJRjwt2d5aV/VqumXh9oPC/IRDxiQVCCCUDCvzArRmCGmUnF/EkVfejZaqZsA2YsUpaC1Q5wcH2L52ooSkcogR5mazehSiBLQT/RlltE7gnmqGIJCFVjrq+wJUMWM8qba+H2vNQGd4NdlmBxk09j8ZxnJb6M5cbKDOUt3W/dmiYdpjfuQ/sWwDNVRTA2DAggw0x/GVAqLuXIG0DRUIlP5zSU13HJJUh35bJ4JgzwY8TV8Ztgowmoyp46snOuQHnuSy3Q6XjW+cHeIyX8eoxMnufqKeFZMIhUaA==`,
+  refreshTokenPrivateKey: `+soX9T9PjFxYelWCW9yiPhJplWygHI0Ny3CsI/qTaRb+x/xOq5ujX7VRJlMtFECw65ar+XOe6tAsAOV2aMcytK6bby68VlSRg47H0dCPwVLjshgURTVIaN8XYIA9XX+wcVNvf6UAf9vxbd4qfF8HulHEhWVtnvhA2/FwH13M9BuDuyOFL12pJiEAsvBQkXRwjtuLSp1jd2unQcI4XIIKbhFZs4yj+EXyTO6PKbn7k4KR5dn01Opf3Dm58zTezZndB7I49KvsBTQ5iHB85ujOQ9U295W/1lqOU0Hg17EIFkgRRvap8OJcMtSIouyJYu+HcMndeTaSoAtNOh9uenlTQA==`,
+  refreshTokenPublicKey: `Dhwg8M0Jyla/ZM00iY+LRYunFU8l56VDydo0eSdMi3tq4M/uSIs6m9k8PgAKEos6y8ByB/nNWH8sMGe34JuHmCLBcqfKv+AC3gLbc7z3CEJ/g+P4bubk98MtQDJn8SctIN8hEW90s4wGotVsb2jGnBdFIN9vm4cheqHR7a3/PuTlgV/NgucTaOwh7fuuVlRPk5sFbgp11k01kEGwDowHDIjdeQxgEJgOKyCf6b0RZEMgTEbjjjOgZgFdazNzv/Iv9bn2f2dF57LSisnFZRP/zxHwYC3K76UeiLYevqoCmHYuVF/1BhrRuMZX4Ju/HTiV9Y+3RXWRHRGMX0ZZq+DqxQ==`,
+};
